@@ -1,0 +1,22 @@
+[
+  { "entityId": "NVDA", "name": "NVIDIA Corporation", "entityType": "company", "ticker": "NVDA", "sector": "Semiconductors" },
+  { "entityId": "TSMC", "name": "Taiwan Semiconductor Manufacturing Company", "entityType": "company", "ticker": "TSM", "sector": "Semiconductors" },
+  { "entityId": "AAPL", "name": "Apple Inc.", "entityType": "company", "ticker": "AAPL", "sector": "Consumer Electronics" },
+  { "entityId": "TSLA", "name": "Tesla Inc.", "entityType": "company", "ticker": "TSLA", "sector": "Electric Vehicles" },
+  { "entityId": "MSFT", "name": "Microsoft Corporation", "entityType": "company", "ticker": "MSFT", "sector": "Cloud and Software" },
+  { "entityId": "AMZN", "name": "Amazon.com Inc.", "entityType": "company", "ticker": "AMZN", "sector": "Cloud and E-Commerce" },
+  { "entityId": "AMD", "name": "Advanced Micro Devices Inc.", "entityType": "company", "ticker": "AMD", "sector": "Semiconductors" },
+  { "entityId": "INTC", "name": "Intel Corporation", "entityType": "company", "ticker": "INTC", "sector": "Semiconductors" },
+  { "entityId": "GOOGL", "name": "Alphabet Inc.", "entityType": "company", "ticker": "GOOGL", "sector": "Cloud and Internet" },
+  { "entityId": "META", "name": "Meta Platforms Inc.", "entityType": "company", "ticker": "META", "sector": "Social and AI Platforms" },
+  { "entityId": "RARE_EARTHS", "name": "Rare Earth Elements", "entityType": "commodity", "sector": "Critical Minerals" },
+  { "entityId": "OIL", "name": "Crude Oil", "entityType": "commodity", "sector": "Energy" },
+  { "entityId": "LITHIUM", "name": "Lithium", "entityType": "commodity", "sector": "Battery Materials" },
+  { "entityId": "CHINA", "name": "China", "entityType": "country", "region": "Asia" },
+  { "entityId": "TAIWAN", "name": "Taiwan", "entityType": "country", "region": "Asia" },
+  { "entityId": "USA", "name": "United States", "entityType": "country", "region": "North America" },
+  { "entityId": "SEMICONDUCTORS", "name": "Semiconductors", "entityType": "sector", "sector": "Technology" },
+  { "entityId": "AI_INFRASTRUCTURE", "name": "AI Infrastructure", "entityType": "sector", "sector": "Technology" },
+  { "entityId": "EV_SECTOR", "name": "Electric Vehicle Sector", "entityType": "sector", "sector": "Consumer Discretionary" },
+  { "entityId": "QQQ", "name": "Invesco QQQ Trust", "entityType": "etf", "ticker": "QQQ", "sector": "Technology ETF" }
+]
