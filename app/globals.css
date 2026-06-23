@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import '@xyflow/react/dist/style.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -129,4 +130,42 @@
   html {
     @apply font-sans;
   }
+}
+
+.finripple-flow .react-flow__pane {
+  cursor: grab;
+}
+
+.finripple-flow .react-flow__pane:active {
+  cursor: grabbing;
+}
+
+.finripple-flow .react-flow__controls {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--card) 86%, transparent);
+  box-shadow: none;
+}
+
+.finripple-flow .react-flow__controls-button {
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+  color: var(--foreground);
+}
+
+.finripple-flow .react-flow__controls-button:hover {
+  background: var(--muted);
+}
+
+.finripple-flow .react-flow__minimap {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: color-mix(in oklch, var(--card) 88%, transparent);
+}
+
+.finripple-flow .react-flow__edge-textbg {
+  rx: 5;
+  ry: 5;
 }

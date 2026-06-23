@@ -12,7 +12,7 @@ import { SiteHeader } from "@/components/site-header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
-import { RippleGraph } from "@/components/ripple-graph"
+import { StaticRippleGraph } from "@/components/static-ripple-graph"
 import { ImpactScore } from "@/components/impact-score"
 import { getSimulation } from "@/lib/finripple-data"
 
@@ -91,7 +91,7 @@ export default async function ResultsPage({
               </div>
             </CardHeader>
             <CardContent>
-              <RippleGraph
+              <StaticRippleGraph
                 nodes={sim.nodes}
                 links={sim.links}
                 className="h-[380px] rounded-xl border border-border/60 bg-background/40"
