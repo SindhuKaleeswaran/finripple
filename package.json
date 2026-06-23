@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "setup:dynamodb": "tsx scripts/setup-dynamodb.ts",
     "seed": "tsx scripts/seed-dynamodb.ts"
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "@aws-sdk/lib-dynamodb": "^3.1073.0",
     "@base-ui/react": "^1.5.0",
     "@vercel/analytics": "1.6.1",
+    "@xyflow/react": "^12.11.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.16.0",
