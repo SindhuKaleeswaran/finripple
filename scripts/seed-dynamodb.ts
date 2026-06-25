@@ -1,4 +1,4 @@
-import { BatchWriteCommand } from '@aws-sdk/lib-dynamodb'
+import { BatchWriteCommand, ScanCommand } from '@aws-sdk/lib-dynamodb'
 import { readFile } from 'node:fs/promises'
 import { existsSync, readFileSync } from 'node:fs'
 
@@ -17,8 +17,13 @@ type Relationship = {
   targetEntityId: string
   relationshipType: string
   strength: number
+  confidence?: number
   riskCategory: string
   direction: string
+  evidenceSummary?: string
+  evidenceSources?: string[]
+  evidenceUrls?: string[]
+  evidenceSnippets?: string[]
   explanation: string
 }
 
@@ -88,6 +93,44 @@ async function batchWrite(tableName: string, items: Record<string, unknown>[]) {
   return writtenCount
 }
 
+async function clearTable(tableName: string, keyFields: string[]) {
+  const { dynamoDBDocumentClient } = await import('../lib/dynamodb')
+  let startKey: Record<string, unknown> | undefined
+  let deletedCount = 0
+
+  do {
+    const response = await dynamoDBDocumentClient.send(
+      new ScanCommand({
+        TableName: tableName,
+        ProjectionExpression: keyFields.join(', '),
+        ExclusiveStartKey: startKey,
+      }),
+    )
+    const items = response.Items ?? []
+
+    for (const itemChunk of chunk(items, 25)) {
+      if (itemChunk.length === 0) continue
+
+      await dynamoDBDocumentClient.send(
+        new BatchWriteCommand({
+          RequestItems: {
+            [tableName]: itemChunk.map((item) => ({
+              DeleteRequest: {
+                Key: Object.fromEntries(keyFields.map((field) => [field, item[field]])),
+              },
+            })),
+          },
+        }),
+      )
+      deletedCount += itemChunk.length
+    }
+
+    startKey = response.LastEvaluatedKey as Record<string, unknown> | undefined
+  } while (startKey)
+
+  return deletedCount
+}
+
 async function main() {
   loadEnvLocal()
 
@@ -95,9 +138,17 @@ async function main() {
   const entities = await loadJson<Entity[]>(new URL('../data/entities.json', import.meta.url))
   const relationships = await loadJson<Relationship[]>(new URL('../data/relationships.json', import.meta.url))
 
+  if (process.env.DEBUG_EVIDENCE === 'true') {
+    console.log('DEBUG_EVIDENCE first relationship from data/relationships.json:', relationships[0] ?? null)
+  }
+
+  const deletedRelationshipCount = await clearTable(TABLES.relationships, ['sourceEntityId', 'relationshipId'])
+  const deletedEntityCount = await clearTable(TABLES.entities, ['entityId'])
   const entityCount = await batchWrite(TABLES.entities, entities)
   const relationshipCount = await batchWrite(TABLES.relationships, relationships)
 
+  console.log(`Deleted ${deletedEntityCount} existing entities from ${TABLES.entities}.`)
+  console.log(`Deleted ${deletedRelationshipCount} existing relationships from ${TABLES.relationships}.`)
   console.log(`Seeded ${entityCount} entities into ${TABLES.entities}.`)
   console.log(`Seeded ${relationshipCount} relationships into ${TABLES.relationships}.`)
 }

@@ -8,6 +8,7 @@ import {
   MiniMap,
   ReactFlow,
   type Edge,
+  type EdgeMouseHandler,
   type Node,
 } from "@xyflow/react"
 
@@ -16,6 +17,8 @@ import type { RippleEdge, RippleNode } from "@/lib/ripple-engine"
 type RippleGraphProps = {
   nodes: RippleNode[]
   edges: RippleEdge[]
+  selectedEdge?: RippleEdge | null
+  onEdgeSelect?: (edge: RippleEdge) => void
   className?: string
 }
 
@@ -35,14 +38,26 @@ function nodeSize(score: number) {
 
 function buildFlowNodes(nodes: RippleNode[]): Node[] {
   const nodesByDepth = new Map<number, RippleNode[]>()
+  const nodesById = new Map<string, RippleNode>()
 
   for (const node of nodes) {
+    const existingNode = nodesById.get(node.entityId)
+    if (existingNode && existingNode.impactScore >= node.impactScore) {
+      continue
+    }
+
+    nodesById.set(node.entityId, node)
+  }
+
+  const uniqueNodes = Array.from(nodesById.values())
+
+  for (const node of uniqueNodes) {
     const depthNodes = nodesByDepth.get(node.depth) ?? []
     depthNodes.push(node)
     nodesByDepth.set(node.depth, depthNodes)
   }
 
-  return nodes.map((node) => {
+  return uniqueNodes.map((node) => {
     const depthNodes = nodesByDepth.get(node.depth) ?? []
     const indexInDepth = depthNodes.findIndex(
       (depthNode) => depthNode.entityId === node.entityId,
@@ -80,32 +95,82 @@ function buildFlowNodes(nodes: RippleNode[]): Node[] {
 }
 
 function buildFlowEdges(edges: RippleEdge[]): Edge[] {
-  return edges.map((edge) => ({
-    id: `${edge.source}-${edge.target}`,
-    source: edge.source,
-    target: edge.target,
-    label: `${edge.relationshipType} ${edge.strength.toFixed(2)}`,
-    animated: edge.strength > 0.75,
-    style: {
-      stroke: "oklch(0.78 0.13 180)",
-      strokeOpacity: 0.48 + edge.strength * 0.28,
-      strokeWidth: 1.4 + edge.strength * 1.8,
-    },
-    labelStyle: {
-      fill: "oklch(0.78 0.13 180)",
-      fontSize: 10,
-      fontWeight: 600,
-    },
-    labelBgStyle: {
-      fill: "oklch(0.16 0.012 240 / 0.86)",
-      fillOpacity: 0.9,
-    },
-  }))
+  const seenExactEdges = new Set<string>()
+  const uniqueEdges = edges.filter((edge) => {
+    const exactKey = `${edge.source}-${edge.target}-${edge.relationshipType}-${edge.strength}`
+    if (seenExactEdges.has(exactKey)) {
+      return false
+    }
+
+    seenExactEdges.add(exactKey)
+    return true
+  })
+
+  return uniqueEdges.map((edge, index) => {
+    return {
+      id: `${edge.source}-${edge.target}-${edge.relationshipType}-${index}`,
+      source: edge.source,
+      target: edge.target,
+      data: {
+        relationship: edge,
+      },
+      label: `${edge.relationshipType} ${edge.strength.toFixed(2)}`,
+      animated: edge.strength > 0.75,
+      style: {
+        stroke: "oklch(0.78 0.13 180)",
+        strokeOpacity: 0.48 + edge.strength * 0.28,
+        strokeWidth: 1.4 + edge.strength * 1.8,
+      },
+      labelStyle: {
+        fill: "oklch(0.78 0.13 180)",
+        fontSize: 10,
+        fontWeight: 600,
+      },
+      labelBgStyle: {
+        fill: "oklch(0.16 0.012 240 / 0.86)",
+        fillOpacity: 0.9,
+      },
+    }
+  })
 }
 
-export function RippleGraph({ nodes, edges, className }: RippleGraphProps) {
+export function RippleGraph({
+  nodes,
+  edges,
+  selectedEdge,
+  onEdgeSelect,
+  className,
+}: RippleGraphProps) {
   const flowNodes = useMemo(() => buildFlowNodes(nodes), [nodes])
-  const flowEdges = useMemo(() => buildFlowEdges(edges), [edges])
+  const selectedEdgeKey = selectedEdge
+    ? `${selectedEdge.source}-${selectedEdge.target}-${selectedEdge.relationshipType}-${selectedEdge.strength}`
+    : null
+  const flowEdges = useMemo(
+    () =>
+      buildFlowEdges(edges).map((edge) => {
+        const relationship = edge.data?.relationship as RippleEdge | undefined
+        const edgeKey = relationship
+          ? `${relationship.source}-${relationship.target}-${relationship.relationshipType}-${relationship.strength}`
+          : null
+        const selected = selectedEdgeKey !== null && edgeKey === selectedEdgeKey
+
+        return {
+          ...edge,
+          style: {
+            ...edge.style,
+            strokeOpacity: selected ? 0.95 : edge.style?.strokeOpacity,
+            strokeWidth: selected ? 4 : edge.style?.strokeWidth,
+          },
+        }
+      }),
+    [edges, selectedEdgeKey],
+  )
+  const handleEdgeClick: EdgeMouseHandler = (_event, edge) => {
+    const relationship = edge.data?.relationship as RippleEdge | undefined
+    if (relationship) {
+      onEdgeSelect?.(relationship)
+    }
+  }
 
   return (
     <div
@@ -124,6 +189,7 @@ export function RippleGraph({ nodes, edges, className }: RippleGraphProps) {
         minZoom={0.25}
         maxZoom={1.6}
         nodesDraggable={false}
+        onEdgeClick={handleEdgeClick}
       >
         <Background
           color="oklch(0.78 0.13 180 / 0.22)"

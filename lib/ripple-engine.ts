@@ -3,8 +3,13 @@ export type Relationship = {
   targetEntityId: string
   relationshipType: string
   strength: number
+  confidence?: number
   riskCategory: string
   direction: string
+  evidenceSummary?: string
+  evidenceSources?: string[]
+  evidenceUrls?: string[]
+  evidenceSnippets?: string[]
   explanation?: string
 }
 
@@ -20,7 +25,15 @@ export type RippleEdge = {
   source: string
   target: string
   strength: number
+  confidence?: number
   relationshipType: string
+  riskCategory?: string
+  direction?: string
+  explanation?: string
+  evidenceSummary?: string
+  evidenceSources?: string[]
+  evidenceUrls?: string[]
+  evidenceSnippets?: string[]
 }
 
 type SimulateRippleInput = {
@@ -88,7 +101,15 @@ export async function simulateRipple({
           source: relationship.sourceEntityId,
           target: relationship.targetEntityId,
           strength: relationship.strength,
+          confidence: relationship.confidence,
           relationshipType: relationship.relationshipType,
+          riskCategory: relationship.riskCategory,
+          direction: relationship.direction,
+          explanation: relationship.explanation,
+          evidenceSummary: relationship.evidenceSummary,
+          evidenceSources: relationship.evidenceSources,
+          evidenceUrls: relationship.evidenceUrls,
+          evidenceSnippets: relationship.evidenceSnippets,
         })
 
         const existingNode = nodesById.get(relationship.targetEntityId)

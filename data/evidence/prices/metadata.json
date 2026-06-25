@@ -1,0 +1,106 @@
+{
+  "source": "Yahoo Finance chart API",
+  "collectedAt": "2026-06-24T00:56:37.435Z",
+  "tickers": {
+    "NVDA": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "TSM": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "AAPL": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AAPL?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "TSLA": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/TSLA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "MSFT": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/MSFT?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "AMZN": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "AMD": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "INTC": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/INTC?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "GOOGL": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "META": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "AVGO": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "QCOM": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "ASML": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "MU": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "ORCL": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/ORCL?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "CRM": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CRM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "JPM": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "BAC": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BAC?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "XOM": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "CVX": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "BA": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/BA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "LMT": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/LMT?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "COST": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "WMT": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    },
+    "NKE": {
+      "sourceUrl": "https://query1.finance.yahoo.com/v8/finance/chart/NKE?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "observations": 501
+    }
+  }
+}

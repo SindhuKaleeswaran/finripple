@@ -61,6 +61,10 @@ export async function POST(request: Request) {
       getRelationships: getRelationshipsFromSource,
     })
 
+    if (process.env.DEBUG_EVIDENCE === 'true') {
+      console.log('DEBUG_EVIDENCE first simulate edge:', result.edges[0] ?? null)
+    }
+
     return NextResponse.json({
       scenario,
       startEntityIds,
