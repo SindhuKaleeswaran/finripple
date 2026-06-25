@@ -7,6 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "collect:real-evidence": "tsx scripts/knowledge-graph/collect-real-evidence.ts",
+    "build:kg": "tsx scripts/knowledge-graph/build-knowledge-graph.ts",
     "setup:dynamodb": "tsx scripts/setup-dynamodb.ts",
     "seed": "tsx scripts/seed-dynamodb.ts"
   },

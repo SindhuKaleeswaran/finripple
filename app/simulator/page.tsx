@@ -1,7 +1,8 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { AlertCircle, ArrowRight, Loader2, Sparkles, Zap } from "lucide-react"
+import { EvidencePanel } from "@/components/EvidencePanel"
 import { RippleGraph } from "@/components/RippleGraph"
 import { SiteHeader } from "@/components/site-header"
 import { Badge } from "@/components/ui/badge"
@@ -28,10 +29,16 @@ type SimulationApiResult = {
 }
 
 export default function SimulatorPage() {
+  const [mounted, setMounted] = useState(false)
   const [scenario, setScenario] = useState("")
   const [running, setRunning] = useState(false)
   const [apiResult, setApiResult] = useState<SimulationApiResult | null>(null)
+  const [selectedEdge, setSelectedEdge] = useState<RippleEdge | null>(null)
   const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   async function runSimulation(value: string) {
     const query = value.trim()
@@ -62,8 +69,10 @@ export default function SimulatorPage() {
       }
 
       setApiResult(payload as SimulationApiResult)
+      setSelectedEdge(null)
     } catch (caughtError) {
       setApiResult(null)
+      setSelectedEdge(null)
       setError(
         caughtError instanceof Error
           ? caughtError.message
@@ -119,7 +128,7 @@ export default function SimulatorPage() {
               </p>
               <Button
                 size="lg"
-                disabled={!scenario.trim() || running}
+                disabled={!mounted || !scenario.trim() || running}
                 onClick={() => void runSimulation(scenario)}
                 className="sm:w-auto"
               >
@@ -205,8 +214,13 @@ export default function SimulatorPage() {
                 <RippleGraph
                   nodes={apiResult.result.nodes}
                   edges={apiResult.result.edges}
+                  selectedEdge={selectedEdge}
+                  onEdgeSelect={setSelectedEdge}
                   className="h-[360px] sm:h-[460px]"
                 />
+                <div className="mt-4">
+                  <EvidencePanel edge={selectedEdge} />
+                </div>
               </div>
 
               <div className="mt-6">
