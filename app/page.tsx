@@ -8,6 +8,7 @@ import {
   TrendingUp,
 } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { StaticRippleGraph } from "@/components/static-ripple-graph"
@@ -189,12 +190,7 @@ export default function LandingPage() {
         </section>
       </main>
 
-      <footer className="border-t border-border/60">
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-3 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:px-6 lg:px-8">
-          <p>FinRipple — financial shockwave simulator.</p>
-          <p>For research and illustration only. Not investment advice.</p>
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }

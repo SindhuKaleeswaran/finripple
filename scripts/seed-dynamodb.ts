@@ -138,10 +138,6 @@ async function main() {
   const entities = await loadJson<Entity[]>(new URL('../data/entities.json', import.meta.url))
   const relationships = await loadJson<Relationship[]>(new URL('../data/relationships.json', import.meta.url))
 
-  if (process.env.DEBUG_EVIDENCE === 'true') {
-    console.log('DEBUG_EVIDENCE first relationship from data/relationships.json:', relationships[0] ?? null)
-  }
-
   const deletedRelationshipCount = await clearTable(TABLES.relationships, ['sourceEntityId', 'relationshipId'])
   const deletedEntityCount = await clearTable(TABLES.entities, ['entityId'])
   const entityCount = await batchWrite(TABLES.entities, entities)

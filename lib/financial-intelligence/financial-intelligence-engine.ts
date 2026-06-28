@@ -59,9 +59,6 @@ export class FinancialIntelligenceEngine {
     })
     const runtimeRelationships = [...prunedDynamicRelationships, ...scenarioHypothesisEdges]
     const merged = await this.graphPersistence.mergeWithPersistentGraph(event, runtimeRelationships)
-    console.info(
-      `[FinRipple] evidenceBackedEdges=${prunedDynamicRelationships.length} scenarioHypothesisEdges=${scenarioHypothesisEdges.length} persistentDynamoEdges=${merged.dynamoDbRelationships} finalEdges=${merged.relationships.length} prunedEdges=${prunedRelationships}`,
-    )
     const relationshipIndex = relationshipsBySource(merged.relationships)
     const startEntityIds =
       event.primaryEntityIds.length > 0

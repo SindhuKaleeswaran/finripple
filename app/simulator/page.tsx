@@ -5,6 +5,7 @@ import { AlertCircle, ArrowRight, Briefcase, Loader2, Sparkles, Zap } from "luci
 import { AnalystReport } from "@/components/AnalystReport"
 import { EvidencePanel } from "@/components/EvidencePanel"
 import { RippleGraph } from "@/components/RippleGraph"
+import { SiteFooter } from "@/components/site-footer"
 import { SiteHeader } from "@/components/site-header"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -627,6 +628,7 @@ export default function SimulatorPage() {
           </div>
         </div>
       </main>
+      <SiteFooter />
     </div>
   )
 }
