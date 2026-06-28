@@ -582,7 +582,7 @@ export default function SimulatorPage() {
                           ) : null}
                         </div>
                         <div className="font-mono text-sm tabular-nums">
-                          {node.impactScore.toFixed(2)}
+                          {node.impactScore.toFixed(1)}
                         </div>
                         <div className="font-mono text-sm tabular-nums">
                           {node.depth}

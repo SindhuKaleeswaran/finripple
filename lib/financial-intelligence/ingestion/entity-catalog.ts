@@ -41,12 +41,19 @@ function normalize(value: string) {
   return value.toLowerCase().replaceAll("&", "and")
 }
 
+function includesTerm(text: string, term: string) {
+  const normalizedTerm = term.trim()
+  if (normalizedTerm.length <= 1) return false
+
+  const escaped = normalizedTerm.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")
+  return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text)
+}
+
 function entityTerms(entity: KnowledgeEntity) {
   return [
     entity.entityId,
     entity.name,
     entity.ticker ?? "",
-    entity.description,
     ...(ENTITY_ALIASES[entity.entityId] ?? []),
   ]
     .map(normalize)
@@ -72,7 +79,7 @@ export function understandFinancialEvent(query: string, entities: KnowledgeEntit
   const scoredEntities = entities
     .map((entity) => {
       const terms = entityTerms(entity)
-      const exactMatches = terms.filter((term) => term.length > 1 && normalizedQuery.includes(term)).length
+      const exactMatches = terms.filter((term) => includesTerm(normalizedQuery, term)).length
       return {
         entity,
         score: exactMatches * 4,
