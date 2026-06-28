@@ -1,22 +1,470 @@
 [
-  { "entityId": "NVDA", "name": "NVIDIA Corporation", "entityType": "company", "ticker": "NVDA", "sector": "Semiconductors" },
-  { "entityId": "TSMC", "name": "Taiwan Semiconductor Manufacturing Company", "entityType": "company", "ticker": "TSM", "sector": "Semiconductors" },
-  { "entityId": "AAPL", "name": "Apple Inc.", "entityType": "company", "ticker": "AAPL", "sector": "Consumer Electronics" },
-  { "entityId": "TSLA", "name": "Tesla Inc.", "entityType": "company", "ticker": "TSLA", "sector": "Electric Vehicles" },
-  { "entityId": "MSFT", "name": "Microsoft Corporation", "entityType": "company", "ticker": "MSFT", "sector": "Cloud and Software" },
-  { "entityId": "AMZN", "name": "Amazon.com Inc.", "entityType": "company", "ticker": "AMZN", "sector": "Cloud and E-Commerce" },
-  { "entityId": "AMD", "name": "Advanced Micro Devices Inc.", "entityType": "company", "ticker": "AMD", "sector": "Semiconductors" },
-  { "entityId": "INTC", "name": "Intel Corporation", "entityType": "company", "ticker": "INTC", "sector": "Semiconductors" },
-  { "entityId": "GOOGL", "name": "Alphabet Inc.", "entityType": "company", "ticker": "GOOGL", "sector": "Cloud and Internet" },
-  { "entityId": "META", "name": "Meta Platforms Inc.", "entityType": "company", "ticker": "META", "sector": "Social and AI Platforms" },
-  { "entityId": "RARE_EARTHS", "name": "Rare Earth Elements", "entityType": "commodity", "sector": "Critical Minerals" },
-  { "entityId": "OIL", "name": "Crude Oil", "entityType": "commodity", "sector": "Energy" },
-  { "entityId": "LITHIUM", "name": "Lithium", "entityType": "commodity", "sector": "Battery Materials" },
-  { "entityId": "CHINA", "name": "China", "entityType": "country", "region": "Asia" },
-  { "entityId": "TAIWAN", "name": "Taiwan", "entityType": "country", "region": "Asia" },
-  { "entityId": "USA", "name": "United States", "entityType": "country", "region": "North America" },
-  { "entityId": "SEMICONDUCTORS", "name": "Semiconductors", "entityType": "sector", "sector": "Technology" },
-  { "entityId": "AI_INFRASTRUCTURE", "name": "AI Infrastructure", "entityType": "sector", "sector": "Technology" },
-  { "entityId": "EV_SECTOR", "name": "Electric Vehicle Sector", "entityType": "sector", "sector": "Consumer Discretionary" },
-  { "entityId": "QQQ", "name": "Invesco QQQ Trust", "entityType": "etf", "ticker": "QQQ", "sector": "Technology ETF" }
+  {
+    "entityId": "NVDA",
+    "name": "NVIDIA Corporation",
+    "type": "company",
+    "ticker": "NVDA",
+    "cik": "0001045810",
+    "description": "Designer of GPUs, accelerated computing platforms, networking products, and AI infrastructure hardware and software.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "TSMC",
+    "name": "Taiwan Semiconductor Manufacturing Company",
+    "type": "company",
+    "ticker": "TSM",
+    "cik": null,
+    "description": "Taiwan-based semiconductor foundry manufacturing chips for global fabless and integrated device companies.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "AAPL",
+    "name": "Apple Inc.",
+    "type": "company",
+    "ticker": "AAPL",
+    "cik": "0000320193",
+    "description": "Consumer technology company selling iPhone, Mac, iPad, wearables, services, and custom silicon products.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "TSLA",
+    "name": "Tesla Inc.",
+    "type": "company",
+    "ticker": "TSLA",
+    "cik": "0001318605",
+    "description": "Electric vehicle, battery storage, solar, charging, and energy technology company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "MSFT",
+    "name": "Microsoft Corporation",
+    "type": "company",
+    "ticker": "MSFT",
+    "cik": "0000789019",
+    "description": "Software, cloud computing, gaming, productivity, and AI platform company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "AMZN",
+    "name": "Amazon.com Inc.",
+    "type": "company",
+    "ticker": "AMZN",
+    "cik": "0001018724",
+    "description": "E-commerce, logistics, advertising, streaming, and AWS cloud infrastructure company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "AMD",
+    "name": "Advanced Micro Devices Inc.",
+    "type": "company",
+    "ticker": "AMD",
+    "cik": "0000002488",
+    "description": "Semiconductor company designing CPUs, GPUs, adaptive SoCs, and AI accelerators.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "INTC",
+    "name": "Intel Corporation",
+    "type": "company",
+    "ticker": "INTC",
+    "cik": "0000050863",
+    "description": "Semiconductor designer and manufacturer with CPU, data center, client computing, and foundry operations.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "company",
+    "ticker": "GOOGL",
+    "cik": "0001652044",
+    "description": "Search, advertising, YouTube, Android, cloud computing, AI, and internet platform company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "META",
+    "name": "Meta Platforms Inc.",
+    "type": "company",
+    "ticker": "META",
+    "cik": "0001326801",
+    "description": "Social networking, advertising, messaging, virtual reality, and AI infrastructure company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "AVGO",
+    "name": "Broadcom Inc.",
+    "type": "company",
+    "ticker": "AVGO",
+    "cik": "0001730168",
+    "description": "Semiconductor and infrastructure software company serving networking, broadband, wireless, storage, and enterprise markets.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "QCOM",
+    "name": "Qualcomm Incorporated",
+    "type": "company",
+    "ticker": "QCOM",
+    "cik": "0000804328",
+    "description": "Wireless semiconductor, modem, application processor, licensing, and mobile technology company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "ASML",
+    "name": "ASML Holding N.V.",
+    "type": "company",
+    "ticker": "ASML",
+    "cik": "0000937966",
+    "description": "Supplier of lithography systems used by semiconductor manufacturers.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "MU",
+    "name": "Micron Technology Inc.",
+    "type": "company",
+    "ticker": "MU",
+    "cik": "0000723125",
+    "description": "Memory and storage semiconductor company producing DRAM, NAND, and related products.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "ORCL",
+    "name": "Oracle Corporation",
+    "type": "company",
+    "ticker": "ORCL",
+    "cik": "0001341439",
+    "description": "Enterprise software, database, cloud infrastructure, and business applications company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "CRM",
+    "name": "Salesforce Inc.",
+    "type": "company",
+    "ticker": "CRM",
+    "cik": "0001108524",
+    "description": "Cloud software company providing customer relationship management and enterprise applications.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "JPM",
+    "name": "JPMorgan Chase & Co.",
+    "type": "company",
+    "ticker": "JPM",
+    "cik": "0000019617",
+    "description": "Global banking and financial services company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "BAC",
+    "name": "Bank of America Corporation",
+    "type": "company",
+    "ticker": "BAC",
+    "cik": "0000070858",
+    "description": "Consumer banking, wealth management, commercial banking, and investment banking company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "XOM",
+    "name": "Exxon Mobil Corporation",
+    "type": "company",
+    "ticker": "XOM",
+    "cik": "0000034088",
+    "description": "Integrated oil, natural gas, refining, chemicals, and low-carbon energy company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "CVX",
+    "name": "Chevron Corporation",
+    "type": "company",
+    "ticker": "CVX",
+    "cik": "0000093410",
+    "description": "Integrated energy company involved in oil, natural gas, refining, chemicals, and lower-carbon projects.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "BA",
+    "name": "The Boeing Company",
+    "type": "company",
+    "ticker": "BA",
+    "cik": "0000012927",
+    "description": "Aerospace and defense company producing commercial aircraft, defense systems, and space products.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "LMT",
+    "name": "Lockheed Martin Corporation",
+    "type": "company",
+    "ticker": "LMT",
+    "cik": "0000936468",
+    "description": "Defense contractor producing aircraft, missiles, space systems, sensors, and mission systems.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "COST",
+    "name": "Costco Wholesale Corporation",
+    "type": "company",
+    "ticker": "COST",
+    "cik": "0000909832",
+    "description": "Membership warehouse retailer selling groceries, general merchandise, fuel, and services.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "WMT",
+    "name": "Walmart Inc.",
+    "type": "company",
+    "ticker": "WMT",
+    "cik": "0000104169",
+    "description": "Global retailer operating stores, clubs, e-commerce, grocery, logistics, and marketplace services.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "NKE",
+    "name": "NIKE Inc.",
+    "type": "company",
+    "ticker": "NKE",
+    "cik": "0000320187",
+    "description": "Athletic footwear, apparel, equipment, and consumer brand company.",
+    "entityType": "company"
+  },
+  {
+    "entityId": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "type": "etf",
+    "ticker": "QQQ",
+    "cik": null,
+    "description": "ETF tracking the Nasdaq-100 Index.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "SPY",
+    "name": "SPDR S&P 500 ETF Trust",
+    "type": "etf",
+    "ticker": "SPY",
+    "cik": null,
+    "description": "ETF tracking the S&P 500 Index.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "SOXX",
+    "name": "iShares Semiconductor ETF",
+    "type": "etf",
+    "ticker": "SOXX",
+    "cik": null,
+    "description": "ETF focused on semiconductor companies.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "XLK",
+    "name": "Technology Select Sector SPDR Fund",
+    "type": "etf",
+    "ticker": "XLK",
+    "cik": null,
+    "description": "ETF tracking the technology sector of the S&P 500.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "XLE",
+    "name": "Energy Select Sector SPDR Fund",
+    "type": "etf",
+    "ticker": "XLE",
+    "cik": null,
+    "description": "ETF tracking energy companies in the S&P 500.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "XLF",
+    "name": "Financial Select Sector SPDR Fund",
+    "type": "etf",
+    "ticker": "XLF",
+    "cik": null,
+    "description": "ETF tracking financial companies in the S&P 500.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "XLY",
+    "name": "Consumer Discretionary Select Sector SPDR Fund",
+    "type": "etf",
+    "ticker": "XLY",
+    "cik": null,
+    "description": "ETF tracking consumer discretionary companies in the S&P 500.",
+    "entityType": "etf"
+  },
+  {
+    "entityId": "OIL",
+    "name": "Crude Oil",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Global crude oil commodity exposure affecting energy producers, transportation, chemicals, and consumer prices.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "NATURAL_GAS",
+    "name": "Natural Gas",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Energy commodity used for power generation, heating, industrial feedstock, and LNG exports.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "LITHIUM",
+    "name": "Lithium",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Battery material used in electric vehicles, energy storage, and portable electronics.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "RARE_EARTHS",
+    "name": "Rare Earth Elements",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Critical minerals used in magnets, electronics, defense systems, wind turbines, and electric vehicles.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "COPPER",
+    "name": "Copper",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Industrial metal used in electrical wiring, grid infrastructure, construction, autos, and renewable energy.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "URANIUM",
+    "name": "Uranium",
+    "type": "commodity",
+    "ticker": null,
+    "cik": null,
+    "description": "Nuclear fuel commodity linked to nuclear power generation and energy security.",
+    "entityType": "commodity"
+  },
+  {
+    "entityId": "USA",
+    "name": "United States",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "North American economy and policy region.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "CHINA",
+    "name": "China",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "Major manufacturing, consumer demand, technology, and commodity policy region.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "TAIWAN",
+    "name": "Taiwan",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "Key semiconductor manufacturing region.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "JAPAN",
+    "name": "Japan",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "Major advanced manufacturing, electronics, autos, and industrial technology region.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "SOUTH_KOREA",
+    "name": "South Korea",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "Major semiconductor, electronics, battery, and industrial export region.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "EUROPE",
+    "name": "Europe",
+    "type": "country",
+    "ticker": null,
+    "cik": null,
+    "description": "Regional market for regulation, manufacturing, consumer demand, energy, and defense spending.",
+    "entityType": "country"
+  },
+  {
+    "entityId": "SEMICONDUCTORS",
+    "name": "Semiconductors",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Chip design, fabrication, equipment, memory, foundry, and semiconductor supply chain sector.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "AI_INFRASTRUCTURE",
+    "name": "AI Infrastructure",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Data centers, accelerators, networking, power, software, and cloud systems used for AI.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "CLOUD_COMPUTING",
+    "name": "Cloud Computing",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Cloud infrastructure, platform services, enterprise software, and data center services.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "EV_SECTOR",
+    "name": "Electric Vehicle Sector",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Electric vehicles, batteries, charging, drivetrain systems, and EV supply chains.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "ENERGY",
+    "name": "Energy",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Oil, natural gas, power, refining, chemicals, and energy infrastructure sector.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "DEFENSE",
+    "name": "Defense",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Aerospace, defense contractors, weapons systems, space, and national security spending.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "BANKING",
+    "name": "Banking",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Commercial banking, consumer banking, capital markets, credit, and financial services sector.",
+    "entityType": "sector"
+  },
+  {
+    "entityId": "CONSUMER_RETAIL",
+    "name": "Consumer Retail",
+    "type": "sector",
+    "ticker": null,
+    "cik": null,
+    "description": "Retail, e-commerce, consumer goods, apparel, and warehouse club sector.",
+    "entityType": "sector"
+  }
 ]

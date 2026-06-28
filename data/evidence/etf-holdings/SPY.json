@@ -1,0 +1,11 @@
+{
+  "holdings": [],
+  "metadata": {
+    "etfId": "SPY",
+    "sourceUrl": "https://query1.finance.yahoo.com/v10/finance/quoteSummary/SPY?modules=topHoldings",
+    "status": "unavailable",
+    "reason": "401 Unauthorized for https://query1.finance.yahoo.com/v10/finance/quoteSummary/SPY?modules=topHoldings",
+    "collectedAt": "2026-06-24T00:56:36.634Z",
+    "todo": "If issuer/Yahoo parsing is unreliable, import a verified issuer CSV manually into this file."
+  }
+}

@@ -1,46 +1,11 @@
 import { NextResponse } from 'next/server'
 
-import { getRelationshipsFromSource } from '@/lib/relationship-repository'
-import { simulateRipple } from '@/lib/ripple-engine'
+import { getFinancialIntelligenceEngine } from '@/lib/financial-intelligence/financial-intelligence-engine'
 
 export const runtime = 'nodejs'
 
 type SimulationRequestBody = {
   scenario?: unknown
-}
-
-function mapScenarioToInputs(scenario: string) {
-  const normalizedScenario = scenario.toLowerCase()
-
-  if (normalizedScenario.includes('rare earth') || normalizedScenario.includes('china')) {
-    return {
-      startEntityIds: ['CHINA', 'RARE_EARTHS'],
-      initialSeverity: 100,
-    }
-  }
-
-  if (
-    normalizedScenario.includes('taiwan') ||
-    normalizedScenario.includes('earthquake') ||
-    normalizedScenario.includes('semiconductor')
-  ) {
-    return {
-      startEntityIds: ['TAIWAN', 'TSMC', 'SEMICONDUCTORS'],
-      initialSeverity: 100,
-    }
-  }
-
-  if (normalizedScenario.includes('oil')) {
-    return {
-      startEntityIds: ['OIL'],
-      initialSeverity: 100,
-    }
-  }
-
-  return {
-    startEntityIds: ['QQQ'],
-    initialSeverity: 70,
-  }
 }
 
 export async function POST(request: Request) {
@@ -52,20 +17,13 @@ export async function POST(request: Request) {
     }
 
     const scenario = body.scenario.trim()
-    const { startEntityIds, initialSeverity } = mapScenarioToInputs(scenario)
-    const result = await simulateRipple({
-      startEntityIds,
-      initialSeverity,
-      maxDepth: 3,
-      decayFactor: 0.85,
-      getRelationships: getRelationshipsFromSource,
-    })
+    const simulation = await getFinancialIntelligenceEngine().simulate(scenario)
 
-    return NextResponse.json({
-      scenario,
-      startEntityIds,
-      result,
-    })
+    if (process.env.DEBUG_EVIDENCE === 'true') {
+      console.log('DEBUG_EVIDENCE first simulate edge:', simulation.result.edges[0] ?? null)
+    }
+
+    return NextResponse.json(simulation)
   } catch (error) {
     console.error('Failed to simulate ripple.', error)
 

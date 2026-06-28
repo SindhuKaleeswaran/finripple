@@ -1,0 +1,11 @@
+{
+  "holdings": [],
+  "metadata": {
+    "etfId": "XLY",
+    "sourceUrl": "https://query1.finance.yahoo.com/v10/finance/quoteSummary/XLY?modules=topHoldings",
+    "status": "unavailable",
+    "reason": "401 Unauthorized for https://query1.finance.yahoo.com/v10/finance/quoteSummary/XLY?modules=topHoldings",
+    "collectedAt": "2026-06-24T00:56:37.432Z",
+    "todo": "If issuer/Yahoo parsing is unreliable, import a verified issuer CSV manually into this file."
+  }
+}
