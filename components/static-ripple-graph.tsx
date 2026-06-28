@@ -14,7 +14,7 @@ function radiusFor(score: number) {
   return 2.4 + (score / 100) * 2.6
 }
 
-export function RippleGraph({
+export function StaticRippleGraph({
   nodes,
   links,
   className,

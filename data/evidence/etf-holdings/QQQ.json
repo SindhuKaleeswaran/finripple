@@ -1,0 +1,11 @@
+{
+  "holdings": [],
+  "metadata": {
+    "etfId": "QQQ",
+    "sourceUrl": "https://query1.finance.yahoo.com/v10/finance/quoteSummary/QQQ?modules=topHoldings",
+    "status": "unavailable",
+    "reason": "401 Unauthorized for https://query1.finance.yahoo.com/v10/finance/quoteSummary/QQQ?modules=topHoldings",
+    "collectedAt": "2026-06-24T00:56:36.368Z",
+    "todo": "If issuer/Yahoo parsing is unreliable, import a verified issuer CSV manually into this file."
+  }
+}

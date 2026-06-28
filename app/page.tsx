@@ -10,7 +10,7 @@ import {
 import { SiteHeader } from "@/components/site-header"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { RippleGraph } from "@/components/ripple-graph"
+import { StaticRippleGraph } from "@/components/static-ripple-graph"
 import { getSimulation } from "@/lib/finripple-data"
 
 const features = [
@@ -114,7 +114,7 @@ export default function LandingPage() {
                 </span>
               </div>
               <CardContent className="p-0">
-                <RippleGraph
+                <StaticRippleGraph
                   nodes={preview.nodes}
                   links={preview.links}
                   className="h-[340px]"

@@ -1,0 +1,769 @@
+[
+  {
+    "relationshipId": "rel-001",
+    "sourceEntityId": "AI_INFRASTRUCTURE",
+    "targetEntityId": "AMD",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AI_INFRASTRUCTURE evidence mentions AMD with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-002",
+    "sourceEntityId": "AI_INFRASTRUCTURE",
+    "targetEntityId": "BA",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AI_INFRASTRUCTURE evidence mentions BA with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-003",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "AI_INFRASTRUCTURE",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AMD evidence mentions AI_INFRASTRUCTURE with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-004",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "ASML",
+    "relationshipType": "market_correlation",
+    "strength": 0.58,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMD and ASML was 0.58.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMD/ASML correlation 0.58."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMD,ASML,0.5772673959886233"
+  },
+  {
+    "relationshipId": "rel-005",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "AVGO",
+    "relationshipType": "country_exposure",
+    "riskCategory": "geographic",
+    "direction": "positive",
+    "evidenceSummary": "AMD evidence mentions AVGO with country exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS "
+    ],
+    "explanation": "Evidence indicates geographic operating, manufacturing, demand, or supply-chain exposure.",
+    "rawEvidenceText": "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS Base erosion and profit shifting Broadcom Broadcom Inc. Brookfield Brookfield Asset Management CAGR Compound annual growth rate CCG Client Computing Group operating segment CDP A nonprofit organization that runs a global disclosure system for investors, companies, cities, states, and regions to mana",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-006",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "AVGO",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AMD evidence mentions AVGO with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS "
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS Base erosion and profit shifting Broadcom Broadcom Inc. Brookfield Brookfield Asset Management CAGR Compound annual growth rate CCG Client Computing Group operating segment CDP A nonprofit organization that runs a global disclosure system for investors, companies, cities, states, and regions to mana",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-007",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "BA",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AMD evidence mentions BA with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-008",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "MU",
+    "relationshipType": "market_correlation",
+    "strength": 0.56,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMD and MU was 0.56.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMD/MU correlation 0.56."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMD,MU,0.5614920845813303"
+  },
+  {
+    "relationshipId": "rel-009",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "QCOM",
+    "relationshipType": "market_correlation",
+    "strength": 0.56,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMD and QCOM was 0.56.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMD/QCOM correlation 0.56."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMD,QCOM,0.5583219102128113"
+  },
+  {
+    "relationshipId": "rel-010",
+    "sourceEntityId": "AMD",
+    "targetEntityId": "TSM",
+    "relationshipType": "market_correlation",
+    "strength": 0.6,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMD and TSM was 0.6.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMD?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMD/TSM correlation 0.6."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMD,TSM,0.6041068070354441"
+  },
+  {
+    "relationshipId": "rel-011",
+    "sourceEntityId": "AMZN",
+    "targetEntityId": "GOOGL",
+    "relationshipType": "market_correlation",
+    "strength": 0.55,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMZN and GOOGL was 0.55.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/GOOGL?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMZN/GOOGL correlation 0.55."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMZN,GOOGL,0.550511311806666"
+  },
+  {
+    "relationshipId": "rel-012",
+    "sourceEntityId": "AMZN",
+    "targetEntityId": "META",
+    "relationshipType": "market_correlation",
+    "strength": 0.61,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AMZN and META was 0.61.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AMZN?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/META?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AMZN/META correlation 0.61."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AMZN,META,0.6084001505932503"
+  },
+  {
+    "relationshipId": "rel-013",
+    "sourceEntityId": "ASML",
+    "targetEntityId": "AVGO",
+    "relationshipType": "market_correlation",
+    "strength": 0.56,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between ASML and AVGO was 0.56.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: ASML/AVGO correlation 0.56."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "ASML,AVGO,0.5595353281267836"
+  },
+  {
+    "relationshipId": "rel-014",
+    "sourceEntityId": "ASML",
+    "targetEntityId": "MU",
+    "relationshipType": "market_correlation",
+    "strength": 0.62,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between ASML and MU was 0.62.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: ASML/MU correlation 0.62."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "ASML,MU,0.6175231467045997"
+  },
+  {
+    "relationshipId": "rel-015",
+    "sourceEntityId": "ASML",
+    "targetEntityId": "NVDA",
+    "relationshipType": "market_correlation",
+    "strength": 0.58,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between ASML and NVDA was 0.58.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: ASML/NVDA correlation 0.58."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "ASML,NVDA,0.5799073809366185"
+  },
+  {
+    "relationshipId": "rel-016",
+    "sourceEntityId": "ASML",
+    "targetEntityId": "QCOM",
+    "relationshipType": "market_correlation",
+    "strength": 0.56,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between ASML and QCOM was 0.56.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/QCOM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: ASML/QCOM correlation 0.56."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "ASML,QCOM,0.5602566359833812"
+  },
+  {
+    "relationshipId": "rel-017",
+    "sourceEntityId": "ASML",
+    "targetEntityId": "TSM",
+    "relationshipType": "market_correlation",
+    "strength": 0.69,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between ASML and TSM was 0.69.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/ASML?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: ASML/TSM correlation 0.69."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "ASML,TSM,0.6919036105216313"
+  },
+  {
+    "relationshipId": "rel-018",
+    "sourceEntityId": "AVGO",
+    "targetEntityId": "AMD",
+    "relationshipType": "country_exposure",
+    "riskCategory": "geographic",
+    "direction": "positive",
+    "evidenceSummary": "AVGO evidence mentions AMD with country exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS "
+    ],
+    "explanation": "Evidence indicates geographic operating, manufacturing, demand, or supply-chain exposure.",
+    "rawEvidenceText": "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS Base erosion and profit shifting Broadcom Broadcom Inc. Brookfield Brookfield Asset Management CAGR Compound annual growth rate CCG Client Computing Group operating segment CDP A nonprofit organization that runs a global disclosure system for investors, companies, cities, states, and regions to mana",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-019",
+    "sourceEntityId": "AVGO",
+    "targetEntityId": "AMD",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "AVGO evidence mentions AMD with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/50863/000005086326000011/intc-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS "
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "ogy and opportunity for many industries AI Artificial intelligence AI PC Artificial intelligence personal computer Altera Altera Corporation, a business offering programmable semiconductors, primarily FPGAs, and related products for a broad range of applications. AMD Advanced Micro Devices, Inc. AMIC Advanced Manufacturing Investment Credit Apollo Apollo Global Management, Inc. Apple Apple Inc. ARM Advanced RISC machine ASIC Application-specific integrated circuit ASP Average selling price BEPS Base erosion and profit shifting Broadcom Broadcom Inc. Brookfield Brookfield Asset Management CAGR Compound annual growth rate CCG Client Computing Group operating segment CDP A nonprofit organization that runs a global disclosure system for investors, companies, cities, states, and regions to mana",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-020",
+    "sourceEntityId": "AVGO",
+    "targetEntityId": "MU",
+    "relationshipType": "market_correlation",
+    "strength": 0.56,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AVGO and MU was 0.56.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AVGO/MU correlation 0.56."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AVGO,MU,0.5564516705875708"
+  },
+  {
+    "relationshipId": "rel-021",
+    "sourceEntityId": "AVGO",
+    "targetEntityId": "NVDA",
+    "relationshipType": "market_correlation",
+    "strength": 0.63,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AVGO and NVDA was 0.63.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AVGO/NVDA correlation 0.63."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AVGO,NVDA,0.6306024923005178"
+  },
+  {
+    "relationshipId": "rel-022",
+    "sourceEntityId": "AVGO",
+    "targetEntityId": "TSM",
+    "relationshipType": "market_correlation",
+    "strength": 0.68,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between AVGO and TSM was 0.68.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/AVGO?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: AVGO/TSM correlation 0.68."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "AVGO,TSM,0.6764386911130991"
+  },
+  {
+    "relationshipId": "rel-023",
+    "sourceEntityId": "BA",
+    "targetEntityId": "AI_INFRASTRUCTURE",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "BA evidence mentions AI_INFRASTRUCTURE with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-024",
+    "sourceEntityId": "BA",
+    "targetEntityId": "AMD",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "BA evidence mentions AMD with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/2488/000000248826000018/amd-20251227.htm"
+    ],
+    "evidenceSnippets": [
+      "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessor"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "cash, cash equivalents, and restricted cash $ 5,556 $ 3,811 $ 3,933 See accompanying notes to the Consolidated Financial Statements. 63 Table of Conten t s Advanced Micro Devices, Inc. Notes to Consolidated Financial Statements NOTE 1 The Company Advanced Micro Devices, Inc. is a global semiconductor company. References herein to AMD or the Company mean Advanced Micro Devices, Inc. and its consolidated subsidiaries. AMD s products include Artificial Intelligence (AI) Accelerators, microprocessors (CPUs) and graphics processing units (GPUs), as standalone devices or as incorporated into accelerated processing units (APUs), chipsets, data center and professional GPUs, embedded processors, semi-custom System-on-Chip (SoC) products, microprocessor and SoC development services and technology,",
+    "strength": 0.83,
+    "confidence": 0.89
+  },
+  {
+    "relationshipId": "rel-025",
+    "sourceEntityId": "BAC",
+    "targetEntityId": "JPM",
+    "relationshipType": "market_correlation",
+    "strength": 0.79,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between BAC and JPM was 0.79.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/BAC?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/JPM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: BAC/JPM correlation 0.79."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "BAC,JPM,0.7888190999531906"
+  },
+  {
+    "relationshipId": "rel-026",
+    "sourceEntityId": "COST",
+    "targetEntityId": "WMT",
+    "relationshipType": "market_correlation",
+    "strength": 0.62,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between COST and WMT was 0.62.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/COST?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/WMT?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: COST/WMT correlation 0.62."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "COST,WMT,0.6245698440050721"
+  },
+  {
+    "relationshipId": "rel-027",
+    "sourceEntityId": "CVX",
+    "targetEntityId": "OIL",
+    "relationshipType": "commodity_dependency",
+    "riskCategory": "commodity",
+    "direction": "positive",
+    "evidenceSummary": "CVX evidence mentions OIL with commodity dependency keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm"
+    ],
+    "evidenceSnippets": [
+      "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of L"
+    ],
+    "explanation": "Evidence indicates exposure to a commodity input, energy cost, or critical material.",
+    "rawEvidenceText": "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of Louisiana have filed lawsuits in Louisiana against numerous oil and gas companies seeking remediation damages for coastal erosion in or near oil fields located within Louisiana s coastal zone under Louisiana s State and Local Coastal Resources Management Act (SLCRMA). Chevron entities are defendants",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-028",
+    "sourceEntityId": "CVX",
+    "targetEntityId": "XOM",
+    "relationshipType": "market_correlation",
+    "strength": 0.83,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between CVX and XOM was 0.83.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/CVX?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/XOM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: CVX/XOM correlation 0.83."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "CVX,XOM,0.827660406183373"
+  },
+  {
+    "relationshipId": "rel-029",
+    "sourceEntityId": "ENERGY",
+    "targetEntityId": "EV_SECTOR",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "ENERGY evidence mentions EV_SECTOR with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm"
+    ],
+    "evidenceSnippets": [
+      "nning, investment decisions, and research programs. The Outlook reflects the Company s view of global energy demand and supply through 2050. It is a projection based on current trends in technology, government policies, consumer preferences, geopolitics, and economic development. In addition, ExxonMobil considers a range of scenarios, including remote scenarios, to help inform perspective of the future and enhance strategic thinking over time. Included in the range of these scenarios are the Int"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "nning, investment decisions, and research programs. The Outlook reflects the Company s view of global energy demand and supply through 2050. It is a projection based on current trends in technology, government policies, consumer preferences, geopolitics, and economic development. In addition, ExxonMobil considers a range of scenarios, including remote scenarios, to help inform perspective of the future and enhance strategic thinking over time. Included in the range of these scenarios are the Intergovernmental Panel on Climate Change (IPCC) Likely Below 2 C scenarios and three scenarios from the International Energy Agency (IEA): IEA Stated Policies Scenario (STEPS; 2025 World Energy Outlook (WEO)), which reflects a sector-by-sector assessment of current policy in place and those announced",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-030",
+    "sourceEntityId": "EV_SECTOR",
+    "targetEntityId": "ENERGY",
+    "relationshipType": "sector_exposure",
+    "riskCategory": "sector",
+    "direction": "positive",
+    "evidenceSummary": "EV_SECTOR evidence mentions ENERGY with sector exposure keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/34088/000003408826000045/xom-20251231.htm"
+    ],
+    "evidenceSnippets": [
+      "nning, investment decisions, and research programs. The Outlook reflects the Company s view of global energy demand and supply through 2050. It is a projection based on current trends in technology, government policies, consumer preferences, geopolitics, and economic development. In addition, ExxonMobil considers a range of scenarios, including remote scenarios, to help inform perspective of the future and enhance strategic thinking over time. Included in the range of these scenarios are the Int"
+    ],
+    "explanation": "Evidence indicates sector exposure through products, customers, infrastructure, or end markets.",
+    "rawEvidenceText": "nning, investment decisions, and research programs. The Outlook reflects the Company s view of global energy demand and supply through 2050. It is a projection based on current trends in technology, government policies, consumer preferences, geopolitics, and economic development. In addition, ExxonMobil considers a range of scenarios, including remote scenarios, to help inform perspective of the future and enhance strategic thinking over time. Included in the range of these scenarios are the Intergovernmental Panel on Climate Change (IPCC) Likely Below 2 C scenarios and three scenarios from the International Energy Agency (IEA): IEA Stated Policies Scenario (STEPS; 2025 World Energy Outlook (WEO)), which reflects a sector-by-sector assessment of current policy in place and those announced",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-031",
+    "sourceEntityId": "EV_SECTOR",
+    "targetEntityId": "OIL",
+    "relationshipType": "commodity_dependency",
+    "riskCategory": "commodity",
+    "direction": "positive",
+    "evidenceSummary": "EV_SECTOR evidence mentions OIL with commodity dependency keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm"
+    ],
+    "evidenceSnippets": [
+      "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of L"
+    ],
+    "explanation": "Evidence indicates exposure to a commodity input, energy cost, or critical material.",
+    "rawEvidenceText": "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of Louisiana have filed lawsuits in Louisiana against numerous oil and gas companies seeking remediation damages for coastal erosion in or near oil fields located within Louisiana s coastal zone under Louisiana s State and Local Coastal Resources Management Act (SLCRMA). Chevron entities are defendants",
+    "strength": 0.73,
+    "confidence": 0.82
+  },
+  {
+    "relationshipId": "rel-032",
+    "sourceEntityId": "MU",
+    "targetEntityId": "TSM",
+    "relationshipType": "market_correlation",
+    "strength": 0.62,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between MU and TSM was 0.62.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/MU?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: MU/TSM correlation 0.62."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "MU,TSM,0.6192341493599781"
+  },
+  {
+    "relationshipId": "rel-033",
+    "sourceEntityId": "NVDA",
+    "targetEntityId": "TSM",
+    "relationshipType": "market_correlation",
+    "strength": 0.73,
+    "confidence": 0.75,
+    "riskCategory": "market_comovement",
+    "direction": "positive",
+    "evidenceSummary": "Historical return correlation between NVDA and TSM was 0.73.",
+    "evidenceSources": [
+      "price_returns"
+    ],
+    "evidenceUrls": [
+      "https://query1.finance.yahoo.com/v8/finance/chart/NVDA?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true",
+      "https://query1.finance.yahoo.com/v8/finance/chart/TSM?period1=1719190597&period2=1782262597&interval=1d&events=history&includeAdjustedClose=true"
+    ],
+    "evidenceSnippets": [
+      "Computed from local daily returns in data/evidence/prices/returns.csv: NVDA/TSM correlation 0.73."
+    ],
+    "explanation": "The two assets historically moved together, suggesting shared market or sector exposure.",
+    "rawEvidenceText": "NVDA,TSM,0.7311808979932574"
+  },
+  {
+    "relationshipId": "rel-034",
+    "sourceEntityId": "OIL",
+    "targetEntityId": "EV_SECTOR",
+    "relationshipType": "commodity_dependency",
+    "riskCategory": "commodity",
+    "direction": "positive",
+    "evidenceSummary": "OIL evidence mentions EV_SECTOR with commodity dependency keywords.",
+    "evidenceSources": [
+      "sec_filing"
+    ],
+    "evidenceUrls": [
+      "https://www.sec.gov/Archives/edgar/data/93410/000009341026000078/cvx-20251231.htm"
+    ],
+    "evidenceSnippets": [
+      "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of L"
+    ],
+    "explanation": "Evidence indicates exposure to a commodity input, energy cost, or critical material.",
+    "rawEvidenceText": "(Wash. Super. Ct.); City of Chicago v. BP P.L.C., et al. , No. 2024CH01024 (Ill. Cir. Ct.); Maine v. BP P.L.C. et al. , No. PORSC-CV-24-442 (Me. Super. Ct.); State of Hawaii v. BP P.L.C., et al. , 1CCV-25-0000717 (Haw. Cir. Ct.) ; The People of the State of Michigan v. BP p.l.c., et.al. , Civ. No. 26-cv-00254 (W.D. Mich.). 86 Notes to the Consolidated Financial Statements Financial Table of Contents Millions of dollars, except per-share amounts Louisiana Seven coastal parishes and the State of Louisiana have filed lawsuits in Louisiana against numerous oil and gas companies seeking remediation damages for coastal erosion in or near oil fields located within Louisiana s coastal zone under Louisiana s State and Local Coastal Resources Management Act (SLCRMA). Chevron entities are defendants",
+    "strength": 0.73,
+    "confidence": 0.82
+  }
+]
