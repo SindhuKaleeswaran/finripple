@@ -72,15 +72,9 @@ export class GraphPersistence {
         (error.name === "CredentialsProviderError" || error.message.includes("EACCES"))
       ) {
         this.persistentGraphUnavailable = true
-        console.warn("Persistent graph lookup skipped because DynamoDB is not available in this runtime.")
         return []
       }
 
-      console.warn(
-        `Persistent graph lookup failed for ${sourceEntityId}: ${
-          error instanceof Error ? error.message : "unknown error"
-        }`,
-      )
       return []
     }
   }

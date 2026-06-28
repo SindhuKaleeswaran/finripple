@@ -19,10 +19,6 @@ export async function POST(request: Request) {
     const scenario = body.scenario.trim()
     const simulation = await getFinancialIntelligenceEngine().simulate(scenario)
 
-    if (process.env.DEBUG_EVIDENCE === 'true') {
-      console.log('DEBUG_EVIDENCE first simulate edge:', simulation.result.edges[0] ?? null)
-    }
-
     return NextResponse.json(simulation)
   } catch (error) {
     console.error('Failed to simulate ripple.', error)

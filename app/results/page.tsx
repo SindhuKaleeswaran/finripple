@@ -9,6 +9,7 @@ import {
   TrendingDown,
 } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
@@ -230,12 +231,7 @@ export default async function ResultsPage({
         </div>
       </main>
 
-      <footer className="mt-12 border-t border-border/60">
-        <div className="mx-auto w-full max-w-7xl px-4 py-8 text-center text-sm text-muted-foreground sm:px-6 lg:px-8">
-          FinRipple simulations are illustrative model output, not investment
-          advice.
-        </div>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
