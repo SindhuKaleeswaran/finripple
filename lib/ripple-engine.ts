@@ -11,6 +11,10 @@ export type Relationship = {
   evidenceUrls?: string[]
   evidenceSnippets?: string[]
   explanation?: string
+  graphSource?: "dynamic_evidence" | "persistent_graph" | "scenario_hypothesis"
+  evidenceScore?: number
+  sourceReliability?: number
+  marketCorrelation?: number
 }
 
 export type RippleNode = {
@@ -34,6 +38,10 @@ export type RippleEdge = {
   evidenceSources?: string[]
   evidenceUrls?: string[]
   evidenceSnippets?: string[]
+  graphSource?: "dynamic_evidence" | "persistent_graph" | "scenario_hypothesis"
+  evidenceScore?: number
+  sourceReliability?: number
+  marketCorrelation?: number
 }
 
 type SimulateRippleInput = {
@@ -90,7 +98,10 @@ export async function simulateRipple({
       const relationships = await getRelationships(parentNode.entityId)
 
       for (const relationship of relationships) {
-        const childImpact = parentNode.impactScore * relationship.strength * decayFactor
+        const confidence = relationship.confidence ?? 0.6
+        const evidenceScore = relationship.evidenceScore ?? (relationship.evidenceSnippets?.length ? 0.7 : 0.45)
+        const explainabilityWeight = Math.max(0.35, Math.min(1, 0.7 * confidence + 0.3 * evidenceScore))
+        const childImpact = parentNode.impactScore * relationship.strength * explainabilityWeight * decayFactor
 
         if (childImpact < MIN_IMPACT_SCORE) {
           continue
@@ -110,6 +121,10 @@ export async function simulateRipple({
           evidenceSources: relationship.evidenceSources,
           evidenceUrls: relationship.evidenceUrls,
           evidenceSnippets: relationship.evidenceSnippets,
+          graphSource: relationship.graphSource,
+          evidenceScore: relationship.evidenceScore,
+          sourceReliability: relationship.sourceReliability,
+          marketCorrelation: relationship.marketCorrelation,
         })
 
         const existingNode = nodesById.get(relationship.targetEntityId)
@@ -122,7 +137,10 @@ export async function simulateRipple({
           impactScore: Number(childImpact.toFixed(2)),
           depth: depth + 1,
           parent: parentNode.entityId,
-          reason: relationship.explanation,
+          reason:
+            relationship.explanation ??
+            relationship.evidenceSummary ??
+            `Impact propagated through ${relationship.relationshipType}.`,
         }
 
         nodesById.set(relationship.targetEntityId, childNode)

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "china-japan-rare-earth-2010",
+    "title": "China-Japan rare earth dispute",
+    "dateRange": "2010-2011",
+    "summary": "A diplomatic dispute between China and Japan coincided with rare earth export disruption concerns, highlighting concentration risk in critical minerals used by electronics, autos, defense systems, and clean-energy equipment.",
+    "affectedEntities": [
+      "CHINA",
+      "JAPAN",
+      "RARE_EARTHS",
+      "DEFENSE",
+      "EV_SECTOR"
+    ],
+    "affectedSectors": [
+      "Critical minerals",
+      "Electronics",
+      "Defense",
+      "Automotive",
+      "Clean energy"
+    ],
+    "shockTypes": [
+      "export_control",
+      "commodity_supply",
+      "geopolitical"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/Rare_earths_trade_dispute",
+      "https://en.wikipedia.org/wiki/Rare-earth_element"
+    ],
+    "evidenceSnippets": [
+      "China's rare earth export restrictions became a trade dispute with the United States, European Union, and Japan, and the 2010 episode increased investment in rare earth developments outside China.",
+      "Rare earth metals are used in magnets, defense products, electronics, and other advanced industrial applications."
+    ]
+  },
+  {
+    "id": "china-semiconductor-export-controls-2024",
+    "title": "China-related semiconductor export-control escalation",
+    "dateRange": "2024-2025",
+    "summary": "U.S. and Chinese export-control actions tightened restrictions around advanced chips, semiconductor equipment, high-bandwidth memory, and critical chipmaking materials such as gallium, germanium, graphite, and antimony.",
+    "affectedEntities": [
+      "CHINA",
+      "SEMICONDUCTORS",
+      "AI_INFRASTRUCTURE",
+      "NVDA",
+      "ASML",
+      "SOXX"
+    ],
+    "affectedSectors": [
+      "Semiconductors",
+      "AI infrastructure",
+      "Chip equipment",
+      "Critical materials"
+    ],
+    "shockTypes": [
+      "export_control",
+      "geopolitical",
+      "technology_supply"
+    ],
+    "sourceUrls": [
+      "https://www.wired.com/story/2024-chips-export-controls-china",
+      "https://www.theverge.com/2024/12/3/24311929/china-us-export-chipmaking-components-sanctions"
+    ],
+    "evidenceSnippets": [
+      "U.S. measures restricted China's access to advanced semiconductor equipment, software, and high-bandwidth memory.",
+      "China responded with controls on critical chipmaking materials including gallium, germanium, antimony, and graphite."
+    ]
+  },
+  {
+    "id": "covid-supply-chain-shock",
+    "title": "COVID supply-chain shock",
+    "dateRange": "2020-2022",
+    "summary": "COVID restrictions, labor disruptions, shipping bottlenecks, and demand swings created global supply-chain stress affecting retail inventories, electronics, autos, logistics, and inflation.",
+    "affectedEntities": [
+      "CHINA",
+      "CONSUMER_RETAIL",
+      "SEMICONDUCTORS",
+      "WMT",
+      "COST",
+      "AMZN"
+    ],
+    "affectedSectors": [
+      "Retail",
+      "Logistics",
+      "Consumer goods",
+      "Autos",
+      "Electronics"
+    ],
+    "shockTypes": [
+      "pandemic",
+      "supply_chain",
+      "logistics",
+      "demand_shock"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/2021%E2%80%932023_global_supply_chain_crisis"
+    ],
+    "evidenceSnippets": [
+      "The COVID pandemic and later disruptions slowed global supply chains and contributed to shortages across many product categories.",
+      "Ports, factories, and logistics networks faced backlogs as demand patterns shifted."
+    ]
+  },
+  {
+    "id": "global-chip-shortage-2021",
+    "title": "Global semiconductor shortage",
+    "dateRange": "2020-2023",
+    "summary": "Pandemic demand shifts, capacity constraints, and auto/electronics supply-chain mismatches produced a semiconductor shortage that disrupted vehicle production, consumer electronics, cloud hardware, and industrial equipment.",
+    "affectedEntities": [
+      "SEMICONDUCTORS",
+      "NVDA",
+      "AMD",
+      "AAPL",
+      "TSMC",
+      "INTC",
+      "SOXX"
+    ],
+    "affectedSectors": [
+      "Semiconductors",
+      "Automotive",
+      "Consumer electronics",
+      "Cloud infrastructure"
+    ],
+    "shockTypes": [
+      "capacity_shortage",
+      "supply_chain",
+      "demand_shock"
+    ],
+    "sourceUrls": [
+      "https://www.axios.com/2021/02/24/biden-executive-order-chip-shortage",
+      "https://en.wikipedia.org/wiki/2020%E2%80%932023_global_chip_shortage"
+    ],
+    "evidenceSnippets": [
+      "The U.S. response included a supply-chain review covering semiconductor chips, batteries, rare minerals, and pharmaceuticals.",
+      "Automakers and electronics companies faced production disruption as chip demand and available supply diverged."
+    ]
+  },
+  {
+    "id": "japan-earthquake-supply-chain-2011",
+    "title": "Japan earthquake supply-chain disruption",
+    "dateRange": "March 2011-2012",
+    "summary": "The Tohoku earthquake and tsunami disrupted Japanese industrial production and exposed global dependence on concentrated suppliers for autos, electronics, components, and semiconductor materials.",
+    "affectedEntities": [
+      "JAPAN",
+      "SEMICONDUCTORS",
+      "AAPL",
+      "TSMC",
+      "BA"
+    ],
+    "affectedSectors": [
+      "Semiconductors",
+      "Automotive",
+      "Electronics",
+      "Industrial production"
+    ],
+    "shockTypes": [
+      "natural_disaster",
+      "supply_chain",
+      "production_outage"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/2011_T%C5%8Dhoku_earthquake_and_tsunami"
+    ],
+    "evidenceSnippets": [
+      "The earthquake and tsunami caused severe infrastructure and production disruption in Japan.",
+      "Global manufacturers monitored component availability because Japanese suppliers were deeply embedded in electronics and automotive supply chains."
+    ]
+  },
+  {
+    "id": "oil-shock-airlines-2008",
+    "title": "Oil price shock affecting airlines and energy producers",
+    "dateRange": "2007-2008",
+    "summary": "The 2008 oil price spike sharply increased fuel costs for airlines and transportation while improving near-term earnings sensitivity for energy producers before demand destruction took hold.",
+    "affectedEntities": [
+      "OIL",
+      "ENERGY",
+      "XOM",
+      "CVX"
+    ],
+    "affectedSectors": [
+      "Airlines",
+      "Transportation",
+      "Energy producers",
+      "Consumer discretionary"
+    ],
+    "shockTypes": [
+      "commodity_price",
+      "fuel_cost",
+      "margin_pressure"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/2000s_energy_crisis"
+    ],
+    "evidenceSnippets": [
+      "Crude oil prices rose sharply during the 2000s energy crisis, pressuring fuel-intensive transportation businesses.",
+      "Higher realized prices created positive earnings sensitivity for upstream energy producers before macro demand weakened."
+    ]
+  },
+  {
+    "id": "regional-banking-crisis-2023",
+    "title": "U.S. regional banking crisis",
+    "dateRange": "March 2023",
+    "summary": "Silicon Valley Bank, Signature Bank, and First Republic failures created regional-bank contagion risk tied to uninsured deposits, duration losses, liquidity stress, and depositor concentration.",
+    "affectedEntities": [
+      "BANKING",
+      "JPM",
+      "BAC",
+      "XLF"
+    ],
+    "affectedSectors": [
+      "Regional banks",
+      "Financials",
+      "Venture-backed technology",
+      "Credit"
+    ],
+    "shockTypes": [
+      "liquidity",
+      "interest_rate",
+      "deposit_run",
+      "financial_contagion"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/2023_United_States_banking_crisis",
+      "https://en.wikipedia.org/wiki/Silicon_Valley_Bank"
+    ],
+    "evidenceSnippets": [
+      "In March 2023, several small-to-mid-sized U.S. banks failed and regulators intervened to reduce contagion risk.",
+      "Silicon Valley Bank's failure was tied to a bank run, unrealized securities losses, and a concentrated depositor base."
+    ]
+  },
+  {
+    "id": "russia-europe-energy-2022",
+    "title": "Russia-Europe energy shock",
+    "dateRange": "2022-2023",
+    "summary": "Russia's invasion of Ukraine and subsequent gas dispute with Europe triggered energy-security stress, gas-price volatility, LNG competition, and margin pressure for energy-intensive European industries.",
+    "affectedEntities": [
+      "EUROPE",
+      "ENERGY",
+      "OIL",
+      "NATURAL_GAS",
+      "XOM",
+      "CVX"
+    ],
+    "affectedSectors": [
+      "Energy",
+      "Utilities",
+      "Chemicals",
+      "Industrials",
+      "Inflation-sensitive consumer sectors"
+    ],
+    "shockTypes": [
+      "geopolitical",
+      "energy_supply",
+      "commodity_price"
+    ],
+    "sourceUrls": [
+      "https://en.wikipedia.org/wiki/2022%E2%80%932023_Russia%E2%80%93European_Union_gas_dispute",
+      "https://en.wikipedia.org/wiki/REPowerEU"
+    ],
+    "evidenceSnippets": [
+      "The Russia-EU gas dispute flared after the February 2022 invasion of Ukraine and centered on natural gas pipeline flows to Europe.",
+      "Europe rapidly sought alternate gas supplies and reduced dependence on Russian fossil fuels."
+    ]
+  }
+]
